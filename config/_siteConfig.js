@@ -9,8 +9,8 @@ import theCMS from '../cms/netlify/cms'
  * General Site configurations
  */
 export default {
-  siteName: 'Awake',
-  tagline: 'A Nuxt.js Theme for Netlify CMS',
+  siteName: 'ashish explores',
+  tagline: 'Data Science, Machine Learning, DevOps',
   featureImage: '/uploads/home-hero.jpg',
   logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
@@ -31,13 +31,18 @@ export default {
       link: '/categories'
     },
     {
-      name: 'Github Repo',
-      link: 'https://github.com/danielkellyio/awake-template',
+      name: 'Github',
+      link: 'https://github.com/ashishmenkudale',
       target: '_blank'
     },
     {
-      name: 'Awake+ Premium',
-      link: 'https://awake-premium-lp.netlify.com/',
+      name: 'LinkedIn',
+      link: 'https://www.linkedin.com/in/ashishmenkudale/',
+      target: '_blank'
+    },
+    {
+      name: 'Twitter',
+      link: 'https://www.twitter.com/ashishmenkudale/',
       target: '_blank'
     }
   ],
@@ -60,27 +65,27 @@ export default {
   // Disqus
   disqus: {
     on: true,
-    loadingStrategy: 'button', // Options: onload, lazy, button
-    siteShortName: 'blog-danielkelly-io' // 'blog-danielkelly-io'
+    loadingStrategy: 'onload', // Options: onload, lazy, button
+    siteShortName: 'ashishmenkudale-netlify-com' // 'blog-danielkelly-io'
   },
 
   // Newsletter Subscribe
-  newsletter: {
-    on: true,
-    heading: 'Subscribe to Our Newsletter',
-    btnText: 'Subscribe',
-    // Can be the form action on a mail chimp form, a hubspot form,
-    // or any other url you want to post the form data to
-    mailchimp: {
-      on: true,
-      formAction:
-        'https://danielkelly.us3.list-manage.com/subscribe/post?u=d3c2e762b66a2353d0bc29bf3&amp;id=2abeaa06e0'
-    },
-    custom: {
-      on: false,
-      formAction: ''
-    }
-  },
+//   newsletter: {
+//     on: true,
+//     heading: 'Subscribe to Our Newsletter',
+//     btnText: 'Subscribe',
+//     // Can be the form action on a mail chimp form, a hubspot form,
+//     // or any other url you want to post the form data to
+//     mailchimp: {
+//       on: true,
+//       formAction:
+//         'https://danielkelly.us3.list-manage.com/subscribe/post?u=d3c2e762b66a2353d0bc29bf3&amp;id=2abeaa06e0'
+//     },
+//     custom: {
+//       on: false,
+//       formAction: ''
+//     }
+//   },
 
   // Categories
   categories: {
