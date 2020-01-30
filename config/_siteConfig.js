@@ -39,11 +39,6 @@ export default {
       name: 'LinkedIn',
       link: 'https://www.linkedin.com/in/ashishmenkudale/',
       target: '_blank'
-    },
-    {
-      name: 'Twitter',
-      link: 'https://www.twitter.com/ashishmenkudale/',
-      target: '_blank'
     }
   ],
   hero: {
