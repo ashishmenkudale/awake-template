@@ -11,7 +11,7 @@
           <div class="tile is-parent">
             <article class="tile is-child box">
               <p class="title">
-                Hello!
+                
               </p>
               <p class="subtitle">
                 
@@ -32,15 +32,15 @@
                   </strong>
                 </p>
                 <p>
-                  Data Scientist
+                  Data Scientist,
                 </p>
                 
                 <p>
-                  Analytics and Artificial Intelligence
+                  Analytics and Artificial Intelligence,
                 </p>
                 
                 <p>
-                  Cummins Inc
+                  Cummins Inc,
                 </p>
                 
                 <p>
