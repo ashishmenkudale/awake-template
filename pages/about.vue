@@ -28,7 +28,7 @@
           <quote-card />
           
           <h3>Resume</h3>
-          <img src="/uploads/about-hero.jpg" />
+          <img src="/uploads/Resume_Ashish_2020-1.jpg" alt=""/>
         </div>
 
         <div class="tile is-ancestor">
