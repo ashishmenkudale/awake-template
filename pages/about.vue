@@ -19,9 +19,7 @@
           <figure>
                 <opti-image
                   :src="require('~/assets/uploads/Resume_Ashish_2020-1.jpg').src"
-                  :srcset="
-                    require('~/assets/uploads/Resume_Ashish_2020-1.jpg').srcSet
-                  "
+                  :srcset="require('~/assets/uploads/Resume_Ashish_2020-1.jpg').srcSet"
                 />
               </figure>
               <br />
@@ -31,39 +29,47 @@
           <div class="tile is-parent">
             <article class="tile is-child box">
               <p class="title">
-                Cool Stuff We Do
+                Team Pravega
               </p>
               <p class="subtitle">
-                Sooo Cool
+                Student prototype of Formual one car
               </p>
               <figure class="image is-1by1">
-                <opti-image width="500" height="500" />
+                <opti-image 
+                :src="require('~/assets/uploads/pravega.jpg').src"
+                :srcset="require('~/assets/uploads/pravega.jpg').srcSet" width="500" height="500" />
               </figure>
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box">
               <p class="title">
-                Other Cool Things
+                Team Abadha
               </p>
               <p class="subtitle">
-                Just as cool
+                All terrain vehicle
               </p>
               <figure class="image is-1by1">
-                <opti-image width="500" height="500" />
+                <figure class="image is-1by1">
+                <opti-image 
+                :src="require('~/assets/uploads/abadha.jpg').src"
+                :srcset="require('~/assets/uploads/abadha.jpg').srcSet" width="500" height="500" />
               </figure>
             </article>
           </div>
           <div class="tile is-parent">
             <article class="tile is-child box">
               <p class="title">
-                All the cool
+                And I bake
               </p>
               <p class="subtitle">
-                that is all
+                sourdough bread
               </p>
               <figure class="image is-1by1">
-                <opti-image width="500" height="500" />
+                <figure class="image is-1by1">
+                <opti-image 
+                :src="require('~/assets/uploads/sourdough.jpg').src"
+                :srcset="require('~/assets/uploads/sourdough.jpg').srcSet" width="500" height="500" />
               </figure>
             </article>
           </div>
