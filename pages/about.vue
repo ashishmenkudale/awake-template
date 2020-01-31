@@ -50,7 +50,6 @@
                 All terrain vehicle
               </p>
               <figure class="image is-1by1">
-                <figure class="image is-1by1">
                 <opti-image 
                 :src="require('~/assets/uploads/abadha.jpg').src"
                 :srcset="require('~/assets/uploads/abadha.jpg').srcSet" width="500" height="500" />
@@ -66,7 +65,6 @@
                 sourdough bread
               </p>
               <figure class="image is-1by1">
-                <figure class="image is-1by1">
                 <opti-image 
                 :src="require('~/assets/uploads/sourdough.jpg').src"
                 :srcset="require('~/assets/uploads/sourdough.jpg').srcSet" width="500" height="500" />
