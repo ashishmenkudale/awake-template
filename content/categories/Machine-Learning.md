@@ -1,5 +1,5 @@
 ---
-name: Third Party Integrations
+name: Machine Learning
 image: https://picsum.photos/1800/1801
 ---
 Extend the functionality of Awake with third party integrations
