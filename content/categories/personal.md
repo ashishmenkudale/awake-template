@@ -1,5 +1,5 @@
 ---
-name: Personal
+name: Misc
 image: /uploads/personal.jpg
 ---
-being personal
+Unlabelled stuff in my life
