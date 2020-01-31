@@ -1,45 +1,34 @@
 <template>
   <div id="about-page" class="page-wrapper about-page content-page">
     <site-hero
-      title="About Us"
-      subtitle="Example About Page"
+      title="Who am I"
+      subtitle="is writing bio page narcissism"
       image="/uploads/about-hero.jpg"
     ></site-hero>
     <main-section theme="sidebar-right">
       <template v-slot:default>
         <div class="content">
-          <h3>Fake Heading</h3>
+          <h3>Where I come from</h3>
           <p>
-            <strong>
-              Edit this page in<code>/pages/about.vue</code>to fit your needs.
-            </strong>
+            I did my schooling and graduated junior college in Jalgaon, India. 
+            Moved to Mumbai in 2010 to attend University of Mumbai (Fr. Conceicao Rodrigues College of Engineering, Bandra, Mumbai) 
+            in pursuit of Bachelor's in Engineering (Production Engineering).
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-            eligendi impedit inventore ipsa laboriosam libero magnam modi odio,
-            sunt temporibus. Distinctio doloremque eum magni nostrum quasi
-            ratione rem repudiandae sit!
+            After graduating in 2014 (first class with distinction), I joined Cummins India Ltd. as Applied Mechanics Engineer. 
+            Couple of years in structural analysis, and I was off for Master os Science in Industrial Engineering at University of 
+            Illinois at Chicago.  
           </p>
-
-          <h3>Another Fake Heading</h3>
+          
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-            eligendi impedit inventore ipsa laboriosam libero magnam modi odio,
-            sunt temporibus. Distinctio doloremque eum magni nostrum quasi
-            ratione rem repudiandae sit!
+            During Masters' I become passionate about Data Science. I joined Cummins Inc. as a Data Scientist in March, 2018 and 
+            since then the journey has been full of excitement.   
           </p>
+          
           <quote-card />
-          <h3>Still More Fake Content</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-            eligendi impedit inventore ipsa laboriosam libero magnam modi odio,
-            sunt temporibus. Distinctio doloremque eum magni nostrum quasi
-            ratione rem repudiandae sit! Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit.
-            <strong>Alias aut facere harum ipsam</strong> quibusdam quidem
-            quisquam saepe? Alias architecto blanditiis consequatur consequuntur
-            dicta ipsa iste modi provident, quod, similique veritatis.
-          </p>
+          
+          <h3>Resume</h3>
+          <img src="/uploads/about-hero.jpg" />
         </div>
 
         <div class="tile is-ancestor">
