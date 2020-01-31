@@ -7,5 +7,3 @@
   from = "ashishmenkudale.netlify.com"
   to = "ashishmenkudale.com"
   status = 200
-  force = true
-  headers = {X-From = "Netlify"}
