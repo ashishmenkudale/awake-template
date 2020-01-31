@@ -39,6 +39,11 @@ export default {
       name: 'LinkedIn',
       link: 'https://www.linkedin.com/in/ashishmenkudale/',
       target: '_blank'
+    },
+    {
+      name: 'Twitter',
+      link: 'https://www.twitter.com/ashishmenkudale/',
+      target: '_blank'
     }
   ],
   hero: {
@@ -65,22 +70,22 @@ export default {
   },
 
   // Newsletter Subscribe
-//   newsletter: {
-//     on: true,
-//     heading: 'Subscribe to Our Newsletter',
-//     btnText: 'Subscribe',
-//     // Can be the form action on a mail chimp form, a hubspot form,
-//     // or any other url you want to post the form data to
-//     mailchimp: {
-//       on: true,
-//       formAction:
-//         'https://danielkelly.us3.list-manage.com/subscribe/post?u=d3c2e762b66a2353d0bc29bf3&amp;id=2abeaa06e0'
-//     },
-//     custom: {
-//       on: false,
-//       formAction: ''
-//     }
-//   },
+  newsletter: {
+    on: true,
+    heading: 'Subscribe to my newsletter',
+    btnText: 'Subscribe',
+    // Can be the form action on a mail chimp form, a hubspot form,
+    // or any other url you want to post the form data to
+    mailchimp: {
+      on: true,
+      formAction:
+        'https://netlify.us4.list-manage.com/subscribe/post?u=f73ff843290dcd8b08c04d133&amp;id=2f167511df'
+    },
+    custom: {
+      on: false,
+      formAction: ''
+    }
+  },
 
   // Categories
   categories: {
