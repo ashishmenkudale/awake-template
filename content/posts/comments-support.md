@@ -2,8 +2,8 @@
 title: Comments Support
 subtitle: Add Comments to Posts With Disqus
 category:
-  - Third Party Integrations
-author: Daniel Kelly
+  - Data Science
+author: Ashish Menkudale
 date: 2019-07-24T19:59:59.000Z
 featureImage: /uploads/disqus-hero.jpg
 ---
