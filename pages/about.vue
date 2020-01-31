@@ -10,19 +10,7 @@
         <div class="content">
           <h3>Where I come from</h3>
           <p>
-            I did my schooling and graduated junior college in Jalgaon, India. 
-            Moved to Mumbai in 2010 to attend University of Mumbai (Fr. Conceicao Rodrigues College of Engineering, Bandra, Mumbai) 
-            in pursuit of Bachelor's in Engineering (Production Engineering).
-          </p>
-          <p>
-            After graduating in 2014 (first class with distinction), I joined Cummins India Ltd. as Applied Mechanics Engineer. 
-            Couple of years in structural analysis, and I was off for Master os Science in Industrial Engineering at University of 
-            Illinois at Chicago.  
-          </p>
-          
-          <p>
-            During Masters' I become passionate about Data Science. I joined Cummins Inc. as a Data Scientist in March, 2018 and 
-            since then the journey has been full of excitement.   
+          under construction
           </p>
           
           <quote-card />
