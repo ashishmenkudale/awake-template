@@ -2,7 +2,7 @@
   <div id="about-page" class="page-wrapper about-page content-page">
     <site-hero
       title="Who am I"
-      subtitle="is writing bio page narcissism"
+      subtitle="is writing a bio page narcissism?"
       image="/uploads/about-hero.jpg"
     ></site-hero>
     <main-section theme="sidebar-right">
@@ -28,7 +28,9 @@
           <quote-card />
           
           <h3>Resume</h3>
-          <img src="/uploads/Resume_Ashish_2020-1.jpg" alt=""/>
+          <p>
+          <img src="/uploads/Resume_Ashish_2020-1.jpg" alt="resume image">
+          </p>
         </div>
 
         <div class="tile is-ancestor">
