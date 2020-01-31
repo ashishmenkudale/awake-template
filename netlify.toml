@@ -3,7 +3,3 @@
   command = "npm run generate"
 [build.environment]
   NODE_VERSION = "11"
-[redirects]
-  from = "ashishmenkudale.netlify.com"
-  to = "ashishmenkudale.com"
-  status = 200
