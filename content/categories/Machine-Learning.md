@@ -1,5 +1,5 @@
 ---
 name: Machine Learning
-image: https://picsum.photos/1800/1801
+image: /uploads/machine-learning.jpg
 ---
-Extend the functionality of Awake with third party integrations
+all about machine leanring

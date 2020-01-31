@@ -1,5 +1,5 @@
 ---
 name: Data Science
-image: /logo.svg
+image: /uploads/data_science.jpg
 ---
-All about the Awake Nuxt Template
+All about Data Science

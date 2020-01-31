@@ -1,5 +1,5 @@
 ---
 name: DevOps
-image: https://picsum.photos/1800/1801
+image: /uploads/devops.jpg
 ---
-Extend the functionality of Awake with third party integrations
+All about devops journey
