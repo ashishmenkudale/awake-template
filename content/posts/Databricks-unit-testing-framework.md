@@ -4,7 +4,7 @@ subtitle: suitable for CI/CD workflows with Junit xmls, coverage reports – (Py
 category:
   - DevOps
 author: Ashish Menkudale
-date: 2020-01-25T19:59:59.000Z
+date: 2020-01-25
 featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
@@ -80,6 +80,8 @@ The path where we keep our codebase on dbfs, we will append that path through sy
 In conventional python way, we would have a unittest framework ending with a main(), which executes bunch of tests defined within class. And through command shell, using pytest, this test script will be triggered. Also through command shell, Junit xmls can be generated and with pytest-cov extention, coverage report can be generated.
 
 Because I prefer developing unit testing in the notebook itself, the above option of calling test scripts through command shell was invalid. pytest does not support databricks notebooks (it supports jupyter/ipython notebooks through nbval extentions)
+
+Below is template for Notebook1 from Module1.
 
 ```python
 # Databricks notebook source
@@ -208,7 +210,7 @@ import unittest
 import xmlrunner
 import coverage
 
-class Testcustomsparktest(unittest.TestCase):
+class Testmodule1(unittest.TestCase):
   
   @classmethod
   def setUpClass(cls):
@@ -241,7 +243,7 @@ class Testcustomsparktest(unittest.TestCase):
     cov = coverage.Coverage()
     cov.start()
        
-    suite =  unittest.TestLoader().loadTestsFromTestCase(Testcustomsparktest)
+    suite =  unittest.TestLoader().loadTestsFromTestCase(Testmodule1)
     runner = xmlrunner.XMLTestRunner(output='/dbfs/testreport.xml')
     runner.run(suite)
     
@@ -254,10 +256,10 @@ class Testcustomsparktest(unittest.TestCase):
 Explaining main() of unittest: 
 
 1. Junit xml
-I could not find xmlrunner within unittest module which was generating Junit compatible xmls. There's this [xmlrunner](https://github.com/xmlrunner/unittest-xml-reporting) package I've used which provides xmlrunner. I am defining test suite explicitely with unittest.TestLoader() by passing the class itself. with runner and suite defined, we are triggering unittesting and generating Junit xml.
+I could not find xmlrunner within unittest module which was generating Junit compatible xmls. There's [xmlrunner](https://github.com/xmlrunner/unittest-xml-reporting) package I've used which provides xmlrunner object. I am defining test suite explicitely with unittest.TestLoader() by passing the class itself. with runner and suite defined, we are triggering unittesting and generating Junit xml.
 
 2. Coverage report
-Using coverage.py, we have initiated cov object. We have to explicitly start and stop the execution to note the time. and at the end path for storing html report on coverage.
+Using coverage package, we have initiated cov object. We have to explicitly start and stop the execution. and at the end provide path for storing html report on coverage.
 
 
 ### 5. Explanation for few decisions
