@@ -1,6 +1,6 @@
 ---
-title: Databricks unit testing framework suitable for CI/CD workflows with Junit xmls, coverage reports – (Python) 
-subtitle: Awake is Built to Be Blazing Fast
+title: Databricks unit testing framework
+subtitle: suitable for CI/CD workflows with Junit xmls, coverage reports – (Python)
 category:
   - DevOps
 author: Ashish Menkudale
