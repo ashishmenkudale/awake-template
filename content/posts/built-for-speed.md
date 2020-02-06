@@ -4,7 +4,7 @@ subtitle: suitable for CI/CD workflows with Junit xmls, coverage reports – (Py
 category:
   - DevOps
 author: Ashish Menkudale
-date: 2020-01-31T04:27:56.800Z
+date: January 30, 2020
 featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
@@ -24,7 +24,7 @@ This post demonstrates a simple setup for unittesting python notebooks in databr
 
 This strategy is my personal preference. This might not be optimal solution; feedback/comments are welcome. Meanwhile, here’s how it works.
 
-### Folder structure
+### 1. Folder structure
 
 The first place to start is folder structure for repo. At high level, the folder structure should contain at least two folders,
 
@@ -57,20 +57,25 @@ Utilities folder can have notebooks which orchestrates execution of modules in a
 
 Tests folder will have unittesting scripts and one trigger notebook to trigger all test_Notebooks individually.
 
-### Why this folder structure
+### 2. Why this folder structure
 
 The intended CI flow, will be:
 
   1. Initial desired stages....
   2. Git checkout repo on devops agent
-  3. Devops agent to databricks (workspace folder on workspace, dbfs folder on dbfs) through cli
+  3. Devops agent connects with databricks through cli
+  	- workspace folder on workspace
+	- dbfs folder on dbfs
+	- workspace folder on dbfs
   4. Databricks job submit to trigger the 'Trigger' notebook which calls individual test_notebooks
   5. Read XML / coverage reports
   6. further desired stages....
+  
+Yes, workspace (codebase) we have kept it on dbfs as well. More specifically, we need all the notebooks in the modules on dbfs. The intention is to import notebooks in these modules as a stand alone , independent python modules inside testing notebooks to suit unittest setup.
 
-### 2.	Python Notebooks
+The path where we keep our codebase on dbfs, we will append that path through sys.append.path() within testing notebook, so that, python knows from where to import these modules. (section 4, first 2 commands)
 
-This part is little tricky, expecially in main() of unittest class. 
+### 3.	Python Notebooks
 
 In conventional python way, we would have a unittest framework ending with a main(), which executes bunch of tests defined within class. And through command shell, using pytest, this test script will be triggered. Also through command shell, Junit xmls can be generated and with pytest-cov extention, coverage report can be generated.
 
@@ -136,15 +141,13 @@ class calculator:
 	
 	def use_spark(self):
 		print(self.spark.range(100).count())
-	
-	
+		
 	def add(self, x = None, y = None):
 		"""add function"""
 		if x == None:
 			x = self.x
 		if y == None:
-			y = self.y
-			
+			y = self.y			
 		return x+y
 
 	def subtract(self, x = None, y = None):
@@ -152,8 +155,7 @@ class calculator:
 		if x == None:
 			x = self.x
 		if y == None:
-			y = self.y
-			
+			y = self.y	
 		return x-y
 
 	def multiply(self, x = None, y = None):
@@ -161,8 +163,7 @@ class calculator:
 		if x == None:
 			x = self.x
 		if y == None:
-			y = self.y
-			
+			y = self.y			
 		return x*y
 
 	def devide(self, x = None, y = None):
@@ -170,8 +171,7 @@ class calculator:
 		if x == None:
 			x = self.x
 		if y == None:
-			y = self.y
-			
+			y = self.y			
 		if y == 0:
 			raise ValueError('cannot devide by zero')
 		else:
@@ -179,18 +179,18 @@ class calculator:
 			
 # a provision to execute this script if called from command line just in case, not required in our flow
 if __name__ == '__main__':
-	inst = calculator(x = 1, y = 2, dbutils = dbutils, spark = spark)
+    inst = calculator(x = 1, y = 2, dbutils = dbutils, spark = spark)
     inst.use_spark()
     inst.print_dbutils()
 
 ```
 
 Things to notice:
-dbutils use is limited to scopes. There are not any dbutils.notbooks.run commands or widgets use.
+dbutils use is limited to scopes. There are not any dbutils.notbooks.run commands or widgets use. dbutils.notebook should be kept in orchestration notebooks, not in core modules.
 
-### Test script
+### 4. Test script
 
-Corresponding notebook which triggers unit testing
+Corresponding notebook which triggers unit testing. The trick is in main() of unittest class. 
 
 ```python
 # Databricks notebook source
@@ -199,6 +199,7 @@ sys.path.append('/dbfs/where/you/put/your/module1/notebook/directory/')
 
 # COMMAND ----------
 
+##this import will be successful because we appended path.
 import module1
 
 # COMMAND ----------
@@ -236,14 +237,11 @@ class Testcustomsparktest(unittest.TestCase):
     print("this is teardown class")
     pass
     
-  def main():
-    
+  def main():    
     cov = coverage.Coverage()
     cov.start()
-    
-    
+       
     suite =  unittest.TestLoader().loadTestsFromTestCase(Testcustomsparktest)
-    #runner = unittest.TextTestRunner()
     runner = xmlrunner.XMLTestRunner(output='/dbfs/testreport.xml')
     runner.run(suite)
     
@@ -253,8 +251,17 @@ class Testcustomsparktest(unittest.TestCase):
     
 ```
 
-## Pretty Stinkin' Fast, I'd Say
+Explaining main() of unittest: 
 
-I've taken a number of steps to try and make Awake as fast and snappy as possible for the end user and I think you'll find it's been handled fairly well. Last I ran one of the posts through Page Speed Insights I got a 99 score for desktop and 89 for mobile. [Give it a try for yourself!](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fawake-template.netlify.com%2Fpost-markup-and-formatting%2F&tab=desktop)
+1. Junit xml
+I could not find xmlrunner within unittest module which was generating Junit compatible xmls. There's this [xmlrunner](https://github.com/xmlrunner/unittest-xml-reporting) package I've used which provides xmlrunner. I am defining test suite explicitely with unittest.TestLoader() by passing the class itself. with runner and suite defined, we are triggering unittesting and generating Junit xml.
 
-![Page speed insights score 99!!](/uploads/page-speed-insights.jpg)
+2. Coverage report
+Using coverage.py, we have initiated cov object. We have to explicitly start and stop the execution to note the time. and at the end path for storing html report on coverage.
+
+
+### 5. Explanation for few decisions
+
+We could have kept module_notebooks on workspace itself and triggered unittesting scripts. For this, we will have to use %run magic to run the module_notebook at the start of testing notebooks. I prefer to keep module notebooks on dbfs, it serves another purpose if letting us compile a python module if required using setup tools. (details in another post)
+
+The testing notebooks corresponding to different modules and one trigger notebook for all of them, provides independence of selecting which testing notebooks to run and which not to run. Also, this increases complexity when it comes to the requirement of generating one single xml for all testing scripts and not one xml per testing script. The solution can be either keep on extending single test suite for all test_notebooks or different test suits generating different xmls and at the end with xml parser compiling/merging different xmls into one.
