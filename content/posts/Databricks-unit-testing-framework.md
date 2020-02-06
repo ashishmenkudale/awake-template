@@ -1,6 +1,6 @@
 ---
 title: Databricks unit testing framework
-subtitle: suitable for CI/CD workflows with Junit xmls, coverage reports – (Python)
+subtitle: suitable for CI/CD workflows generating Junit xmls, coverage reports – (Python)
 category:
   - DevOps
 author: Ashish Menkudale
@@ -267,3 +267,5 @@ Using coverage package, we have initiated cov object. We have to explicitly star
 We could have kept module_notebooks on workspace itself and triggered unittesting scripts. For this, we will have to use %run magic to run the module_notebook at the start of testing notebooks. I prefer to keep module notebooks on dbfs, it serves another purpose if letting us compile a python module if required using setup tools. (details in another post)
 
 The testing notebooks corresponding to different modules and one trigger notebook for all of them, provides independence of selecting which testing notebooks to run and which not to run. Also, this increases complexity when it comes to the requirement of generating one single xml for all testing scripts and not one xml per testing script. The solution can be either keep on extending single test suite for all test_notebooks or different test suits generating different xmls and at the end with xml parser compiling/merging different xmls into one.
+
+In the CI/CD workflow, we will submit databricks job to trigger the test_notebooks individually, or we can trigger one trigger notebook which calls all test_notebooks.
