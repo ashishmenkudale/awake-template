@@ -4,7 +4,7 @@ subtitle: suitable for CI/CD workflows generating Junit xmls, coverage reports �
 category:
   - DevOps
 author: Ashish Menkudale
-date: 2020-01-25
+date: 2020-Jan-25
 featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
@@ -16,11 +16,11 @@ It’s more of notebooky interface is a great alternative for conventional Jupyt
 
 When it comes to productionizing models developed in databricks, these workflows in notebooks presents a little different problem for devops / build engineers. The conventional ways of unittesting python modules, generating Junit compatible xml reports, or coverage reports for product owners through command shell do not work as is in this notebook workflow. Also, data scientists working in databricks tend to use ‘dbutils’ dependencies – the databricks custom utility which provides secrets, notebook workflows, widgets etc. delighters as part of their routine model development. 
 
-In this framework incorporating unit testing in a standard CI/CD workflow can easily become tricky.
+In this framework, incorporating unit testing in a standard CI/CD workflow can easily become tricky.
 
 ## What this post is about
 
-This post demonstrates a simple setup for unittesting python notebooks in databricks which is compatible for any CI/CD workflow. This is a middle ground for regular python unittest modules’ framework and databricks notebooks. 
+This post is about a simple setup for unittesting python notebooks in databricks which is compatible for typical CI/CD workflows. This is a middle ground for regular python unittest modules’ framework and databricks notebooks. Similar strategy can be applied for Jupyter notebook workflow on local system as well.
 
 This strategy is my personal preference. This might not be optimal solution; feedback/comments are welcome. Meanwhile, here’s how it works.
 
