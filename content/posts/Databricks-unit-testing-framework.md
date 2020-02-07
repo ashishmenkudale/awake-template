@@ -4,29 +4,29 @@ subtitle: suitable for CI/CD workflows generating Junit xmls, coverage reports �
 category:
   - DevOps
 author: Ashish Menkudale
-date: 2020-Jan-25
+date: 2020-January-25
 featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
-Databricks has blessed Data Science community with a convenient and robust infrastructure for data analysis. Spinning up clusters, spark backbone, language interoperability, nice IDE and many more essential features.
+Databricks has blessed Data Science community with a convenient and robust infrastructure for data analysis. Spinning up clusters, spark backbone, language interoperability, nice IDE, and many more delighters have made life easier.
 
 It’s more of notebooky interface is a great alternative for conventional Jupyter users. And Data Scientists - mostly who are not orthodox python hard coders, love this interface.
 
 ## Problem statement
 
-When it comes to productionizing models developed in databricks, these workflows in notebooks presents a little different problem for devops / build engineers. The conventional ways of unittesting python modules, generating Junit compatible xml reports, or coverage reports for product owners through command shell do not work as is in this notebook workflow. Also, data scientists working in databricks tend to use ‘dbutils’ dependencies – the databricks custom utility which provides secrets, notebook workflows, widgets etc. delighters as part of their routine model development. 
+When it comes to productionizing models developed in databricks notebooks, these workflows in notebooks present a little different problem for devops / build engineers. The conventional ways of unittesting python modules, generating Junit compatible xml reports, or coverage reports through command shell do not work as is in this new workflow. Also, Data Scientists working in databricks tend to use ‘dbutils’ dependencies – the databricks custom utility which provides secrets, notebook workflows, widgets etc. delighters as part of their routine model/project development. 
 
-In this framework, incorporating unit testing in a standard CI/CD workflow can easily become tricky.
+Within these development cycles in databricks, incorporating unit testing in a standard CI/CD workflow can easily become tricky.
 
 ## What this post is about
 
-This post is about a simple setup for unittesting python notebooks in databricks which is compatible for typical CI/CD workflows. This is a middle ground for regular python unittest modules’ framework and databricks notebooks. Similar strategy can be applied for Jupyter notebook workflow on local system as well.
+This post is about a simple setup for unittesting python modules / notebooks in databricks. This setup is compatible for typical CI/CD workflow. This is a middle ground for regular python 'unittest' module's framework and databricks notebooks. Similar strategy can be applied for Jupyter notebook workflow on local system as well.
 
-This strategy is my personal preference. This might not be optimal solution; feedback/comments are welcome. Meanwhile, here’s how it works.
+This strategy is my personal preference. This might not be an optimal solution; feedback/comments are welcome. Meanwhile, here’s how it works.
 
 ### 1. Folder structure
 
-The first place to start is folder structure for repo. At high level, the folder structure should contain at least two folders,
+The first place to start is a folder structure for repo. At high level, the folder structure should contain at least two folders, workspace and dbfs
 
   -	Workspace
       -	Module1
@@ -49,9 +49,9 @@ The first place to start is folder structure for repo. At high level, the folder
       -	property _files
       -	intermediate_tables
 
-Workspace folder will have all the notebooks, dbfs will have all the intermediate files that are to be placed on dbfs.
+Workspace folder contains all the modules / notebooks. dbfs folder contains all the intermediate files which are to be placed on dbfs.
 
-The notebooks in modules should be purely data science models or scripts which can be executed independently. In these notebooks, databricks’s dbutils dependency should be limited to accessing scopes and secrets. These are the notebooks, for which we will have unittesting done through notebooks in test folder.
+The notebooks in module folders should be purely data science models or scripts which can be executed independently. In these notebooks, databricks’s dbutils dependency should be limited to accessing scopes and secrets. These are the notebooks, for which we will have unittesting triggered through notebooks in the 'test' folder.
 
 Utilities folder can have notebooks which orchestrates execution of modules in any desired sequence. These notebooks can have dbutils.notebook.run commands. 
 
@@ -64,22 +64,24 @@ The intended CI flow, will be:
   1. Initial desired stages....
   2. Git checkout repo on devops agent
   3. Devops agent connects with databricks through cli
-  	- workspace folder on workspace
-	- dbfs folder on dbfs
-	- workspace folder on dbfs
+  	-- workspace folder on workspace
+	-- dbfs folder on dbfs
+	-- workspace folder on dbfs
   4. Databricks job submit to trigger the 'Trigger' notebook which calls individual test_notebooks
   5. Read XML / coverage reports
   6. further desired stages....
   
-Yes, workspace (codebase) we have kept it on dbfs as well. More specifically, we need all the notebooks in the modules on dbfs. The intention is to import notebooks in these modules as a stand alone , independent python modules inside testing notebooks to suit unittest setup.
+Yes, we have kept workspace (codebase) on dbfs as well. More specifically, we need all the notebooks in the modules on dbfs. The intention is to have an option of importing notebooks in these modules as stand alone, independent python modules inside testing notebooks to suit unittest setup.
 
-The path where we keep our codebase on dbfs, we will append that path through sys.append.path() within testing notebook, so that, python knows from where to import these modules. (section 4, first 2 commands)
+We will append the path where we kept our codebase on dbfs through sys.append.path() within testing notebook. This enables python to import these modules / Notebooks. (section 4, first 2 commands)
 
 ### 3.	Python Notebooks
 
-In conventional python way, we would have a unittest framework ending with a main(), which executes bunch of tests defined within class. And through command shell, using pytest, this test script will be triggered. Also through command shell, Junit xmls can be generated and with pytest-cov extention, coverage report can be generated.
+In conventional python way, we would have a unittest framework, where our test class inherits unittest.Testcase ending with a main(). This main() calls bunch of tests defined within the class. And through command shell, using pytest, this test script will be triggered. Also through command shell, Junit xmls can be generated with pytest --junitxml=path command. Similarly with pytest-cov extention, coverage report can be generated.
 
-Because I prefer developing unit testing in the notebook itself, the above option of calling test scripts through command shell was invalid. pytest does not support databricks notebooks (it supports jupyter/ipython notebooks through nbval extentions)
+Because I prefer developing unit testing in the notebook itself, the above option of calling test scripts through command shell is no longer available. pytest does not support databricks notebooks (it supports jupyter/ipython notebooks through nbval extentions)
+
+To understand the proposed way, let's first see how a typical python module notebook should look like.
 
 Below is template for Notebook1 from Module1.
 
@@ -188,11 +190,11 @@ if __name__ == '__main__':
 ```
 
 Things to notice:
-dbutils use is limited to scopes. There are not any dbutils.notbooks.run commands or widgets use. dbutils.notebook should be kept in orchestration notebooks, not in core modules.
+dbutils use is limited to scopes. There are not any dbutils.notbooks.run commands or widgets being used. dbutils.notebook related commands should be kept in orchestration notebooks, not in core modules.
 
 ### 4. Test script
 
-Corresponding notebook which triggers unit testing. The trick is in main() of unittest class. 
+Corresponding test_notebook which has unittest setup. The trick is in main() of unittest class. 
 
 ```python
 # Databricks notebook source
@@ -255,17 +257,19 @@ class Testmodule1(unittest.TestCase):
 
 Explaining main() of unittest: 
 
+The objective is to generate Junit compatible xml and generate a coverage report when we call this test_notebook.
+
 1. Junit xml
-I could not find xmlrunner within unittest module which was generating Junit compatible xmls. There's [xmlrunner](https://github.com/xmlrunner/unittest-xml-reporting) package I've used which provides xmlrunner object. I am defining test suite explicitely with unittest.TestLoader() by passing the class itself. with runner and suite defined, we are triggering unittesting and generating Junit xml.
+I could not find xmlrunner within unittest module which could generate Junit compatible xmls. Here I've used [xmlrunner](https://github.com/xmlrunner/unittest-xml-reporting) package which provides xmlrunner object. I am defining test suite explicitely with unittest.TestLoader() by passing the class itself. With runner and suite defined, we are triggering unittesting and generating Junit xml.
 
 2. Coverage report
-Using coverage package, we have initiated cov object. We have to explicitly start and stop the execution. and at the end provide path for storing html report on coverage.
+Using coverage package, we have initiated 'cov' object. We have to explicitly start and stop the execution. At the end, path for storing html report on coverage is provided.
 
 
 ### 5. Explanation for few decisions
 
-We could have kept module_notebooks on workspace itself and triggered unittesting scripts. For this, we will have to use %run magic to run the module_notebook at the start of testing notebooks. I prefer to keep module notebooks on dbfs, it serves another purpose if letting us compile a python module if required using setup tools. (details in another post)
+We could have kept module_notebooks on workspace itself and triggered unittesting scripts. For this, we will have to use %run magic to run the module_notebook at the start of testing notebooks. I prefer to keep module notebooks on dbfs, it serves another purpose in case we have to compile a python module using setup tools. (details in another post)
 
-The testing notebooks corresponding to different modules and one trigger notebook for all of them, provides independence of selecting which testing notebooks to run and which not to run. Also, this increases complexity when it comes to the requirement of generating one single xml for all testing scripts and not one xml per testing script. The solution can be either keep on extending single test suite for all test_notebooks or different test suits generating different xmls and at the end with xml parser compiling/merging different xmls into one.
+The testing notebooks corresponding to different modules and one trigger notebook to invoke all testing notebooks provides independence of selecting which testing notebooks to run and which not to run. However, this increases complexity when it comes to the requirement of generating one single xml for all testing scripts and not one xml per testing script. The solution can be either extending single test suite for all test_notebooks or different test suits generating different xmls which at the end are compiled/merged with xml parser into one single xml.
 
-In the CI/CD workflow, we will submit databricks job to trigger the test_notebooks individually, or we can trigger one trigger notebook which calls all test_notebooks.
+In the CI/CD workflow, we will submit databricks job to run the test_notebooks individually, or we can run one trigger notebook which calls all test_notebooks.
