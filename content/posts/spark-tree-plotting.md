@@ -13,5 +13,5 @@ With big data comes a big challenge of visualizing it efficiently. And moreover,
 I came across this awesome ![spark-tree-plotting](https://github.com/julioasotodv/spark-tree-plotting) package. This post is about implementing this package in pyspark.
 
 Few installs,
-![spark-plotting-tree](/uploads/Snap6.png)
+![spark-plotting-tree](assets/uploads/Snap6.png)
 
