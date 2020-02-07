@@ -4,8 +4,8 @@ subtitle: Neat little decision tree for big data model in spark
 category:
   - Machine Learning
 author: Ashish Menkudale
-date: 2020-02-03T19:59:59.000Z
-featureImage: /uploads/getting-started-hero.jpg
+date: 2020-03-03T19:59:59.000Z
+featureImage: /uploads/dtree.png
 ---
 
 With big data comes a big challenge of visualizing it efficiently. And moreover, if we are developing a machine learning model with pyspark, there are only handful of visualization packages available. Recently, I was developing a decision tree model in pyspark and to infer the model, I was looking for a visualization module.
