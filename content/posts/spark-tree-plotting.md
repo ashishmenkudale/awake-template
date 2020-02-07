@@ -14,13 +14,7 @@ I came across this awesome [spark-tree-plotting](https://github.com/julioasotodv
 
 This post is about implementing this package in pyspark.
 
-We need few installs to begin with, spark-tree-plotting, pydot, graphviz
-
-![](/uploads/Snap6.png)
-
-![](/uploads/Snap7.png)
-
-![](/uploads/Snap8.png)
+We need few installs to begin with, spark-tree-plotting (.jar can be deployed), pydot, and graphviz.
 
 Using vector assembler, convert individual feature columns into a single vector column. Dataframe will look like,
 
@@ -80,6 +74,13 @@ png_string = plot_tree(dt_fit,
                        
 image = Image.open(io.BytesIO(png_string))
 ```
+If you're still facing issue with ```dot not in python```, run these commands in python terminal,
+
+```python
+%sh
+sudo apt-get install -y graphviz
+pip install pydot
+```
 
 And we can save it as a .png file as
 
@@ -92,4 +93,10 @@ image.save(image_name)
 The saved image image looks like,
 ![](/uploads/dtree.png)
 
-Pretty neat huh, the information shown at each node, is well structured and shows, node number, decision criterion, impurity, gain, and prediction score. The image object is high quality (high resolution). 
+The image object is high quality (high resolution). 
+
+![](/uploads/dtree_node.png)
+
+Pretty neat huh, the information shown at each node, is well structured and shows, node number, decision criterion, impurity, gain, and prediction score. 
+
+Happy Machine Learning!
