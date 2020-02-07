@@ -16,13 +16,13 @@ This post is about implementing this package in pyspark.
 
 We need few installs to begin with, spark-tree-plotting, pydot, graphviz
 
-<img align="left" width="500" src="/assets/uploads/Snap6.png">
-<img align="left" width="500" src="/assets/uploads/Snap7.png">
-<img align="left" width="500" src="/assets/uploads/Snap8.png">
+[](/assets/uploads/Snap6.png =500x)
+[](/assets/uploads/Snap7.png =500x)
+[](/assets/uploads/Snap8.png =500x)
 
 Using vector assembler, convert individual feature columns into a single vector column. Dataframe will look like,
 
-<img align="center" src="/assets/uploads/Snap9.png">
+[](src="/assets/uploads/Snap9.png" =800x)
 
 Let's define decision tree model,
 
@@ -88,6 +88,6 @@ image.save(image_name)
 ```
 
 The saved image image looks like,
-<img align="center" src="/assets/uploads/dtree.png">
+[](/assets/uploads/dtree.png)
 
 Pretty neat huh, the information shown at each node, is well structured and shows, node number, decision criterion, impurity, gain, and prediction score. The image object is high quality (high resolution). 
