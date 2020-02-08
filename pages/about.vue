@@ -194,11 +194,11 @@
             time-management and fabrication skills.
             </p>
           
-          <h3>D. Personality assessment<h3>
+          <h3>D. Personality assessment</h3>
             <h4> MBTI Profile - type - INFJ </h4>
             <h4> DISC Profile - type - C </h4>
           
-          <h3>E. Skills<h3>
+          <h3>E. Skills </h3>
            <p>
             <span>&#8226;</span> Finite Elemental Analysis <span>&#8226;</span> Time and motion study <span>&#8226;</span> Operations research
             <span>&#8226;</span> Machine Learning <span>&#8226;</span> Data Science <span>&#8226;</span> DevOps 
@@ -208,7 +208,7 @@
             <span>&#8226;</span> Onboard diagnostics systems <span>&#8226;</span> Agile culture
            </p> 
            
-          <h3>F. Projects <small> - <a href="https://www.slideshare.net/8082298612/presentations"> slideshare profile </a> </small> <h3>
+          <h3>F. Projects <small> - <a href="https://www.slideshare.net/8082298612/presentations"> slideshare profile </a> </small> </h3>
             
             <h4> Facility Layout and operations efficiency optimization at Mr. transmission facility, Indiana. Apr 2017 </h4> 
               <p>
