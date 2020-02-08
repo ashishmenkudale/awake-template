@@ -130,8 +130,8 @@
           <h3>C. Major achivements</h3>
             <h4>Founder and Captain <small> -  Team Pravega, Formula SAE collegiate chapter, May 2012 - Aug 2014 </small> </h4>
               <p>
-                <span>&#8226;</span> ![Official team report](https://drive.google.com/viewerng/viewer?url=http%3A//www.jsae.or.jp/formula/jp/12th/pdf/no_70.pdf&embedded=true)
-                <span>&#8226;</span> ![Official team movie](https://www.youtube.com/watch?v=BjfrJWS7JkQ&feature=youtu.be)
+                <span>&#8226;</span> <a href="https://drive.google.com/viewerng/viewer?url=http%3A//www.jsae.or.jp/formula/jp/12th/pdf/no_70.pdf&embedded=true"> Official team report </a>
+                <span>&#8226;</span> <a href="https://www.youtube.com/watch?v=BjfrJWS7JkQ&feature=youtu.be"> Official team movie </a>
               </p>
 
               <p>
@@ -199,19 +199,21 @@
             <h4> DISC Profile - type - C </h4>
           
           <h3>E. Skills<h3>
+           <p>
             <span>&#8226;</span> Finite Elemental Analysis <span>&#8226;</span> Time and motion study <span>&#8226;</span> Operations research
             <span>&#8226;</span> Machine Learning <span>&#8226;</span> Data Science <span>&#8226;</span> DevOps 
             <span>&#8226;</span> Cyber physical manufacturing systems <span>&#8226;</span> Inventory control 
             <span>&#8226;</span> Supply chain management <span>&#8226;</span> Time series analysis <span>&#8226;</span> Time series clustering
             <span>&#8226;</span> Long short term memory network <span>&#8226;</span> Testing Strategy <span>&#8226;</span> Computer aided design
             <span>&#8226;</span> Onboard diagnostics systems <span>&#8226;</span> Agile culture
-            
-          <h3>F. Projects <small> - ![slideshare profile](https://www.slideshare.net/8082298612/presentations) </small> <h3>
+           </p> 
+           
+          <h3>F. Projects <small> - <a href="https://www.slideshare.net/8082298612/presentations"> slideshare profile </a> </small> <h3>
             
             <h4> Facility Layout and operations efficiency optimization at Mr. transmission facility, Indiana. Apr 2017 </h4> 
               <p>
-                <span>&#8226;</span> ![Link to presentation](https://www.slideshare.net/8082298612/facility-layout-and-operations-efficiency-optimization)
-                <span>&#8226;</span> ![Link to proposed facility restructuring](https://www.youtube.com/watch?v=2JjVQpg-lWc)
+                <span>&#8226;</span> <a href="https://www.slideshare.net/8082298612/facility-layout-and-operations-efficiency-optimization"> Link to presentation </a>
+                <span>&#8226;</span> <a href="https://www.youtube.com/watch?v=2JjVQpg-lWc"> Link to proposed facility restructuring </a>
               </p>
               <p>
                 Outcomes:
@@ -228,7 +230,7 @@
              
              <h4> Study of end to end memory network and facebook BABI project. Feb 2017 </h4> 
               <p>
-              ![Link to presentation](https://www.slideshare.net/8082298612/study-of-end-to-end-memory-networks)
+              <a href="https://www.slideshare.net/8082298612/study-of-end-to-end-memory-networks"> Link to presentation </a>
                 <ul>
                   <li>Soft attention version of MemN2N. </li>
                   <li>Flexible read-only memory. </li>
@@ -242,21 +244,23 @@
               </p>
                  
           <h3>G. Resume</h3>
-            ![link to pdf format](https://drive.google.com/file/d/0B6w2QVe-_1FfUlVIeDZwNDgxM00/view?usp=sharing)
+            <p>
+              <a href="https://drive.google.com/file/d/0B6w2QVe-_1FfUlVIeDZwNDgxM00/view?usp=sharing"> link to pdf format </a>
+            </p>
             
           <h3>H. Meetups I usually attend</h3>
+          <p>
             <ul>
-              <li> ![IndyPy](https://www.meetup.com/indypy/) </li>
-              <li> ![Data Science Indy](https://www.meetup.com/dsindy/) </li>
-              <li> ![Indy DevOps](https://www.meetup.com/IndyDevOps/) </li>
-              <li> ![Indy Use"R" group](https://www.meetup.com/Indy-useR-Group/) </li>
-              <li> ![Indy Azure user group](https://www.meetup.com/Indy-Azure-User-Group/) </li>
-              <li> ![Indy IoT meetup](https://www.meetup.com/Indy-IoT-Meetup/) </li> 
+              <li> <a href="https://www.meetup.com/indypy/">IndyPy</a> </li> 
+              <li> <a href="https://www.meetup.com/dsindy/">Data Science Indy</a> </li> 
+              <li> <a href="https://www.meetup.com/IndyDevOps/">Indy DevOps</a> </li> 
+              <li> <a href="https://www.meetup.com/Indy-useR-Group/">Indy Use"R" group</a> </li> 
+              <li> <a href="https://www.meetup.com/Indy-Azure-User-Group/">Indy Azure user group</a> </li> 
+              <li> <a href="https://www.meetup.com/Indy-IoT-Meetup/">Indy IoT meetup</a> </li> 
             </ul>
+           </p>
           
           <quote-card />
-          
-          <h3>Resume</h3>
 
         </div>
 
