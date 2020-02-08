@@ -8,7 +8,7 @@
     <main-section theme="sidebar-right">
       <template v-slot:default>
         <div class="content">
-          <h3>Professional Journey</h3>
+          <h3>A. Professional Journey</h3>
             
             <h4>Data Scientist <small> - Current Role since March 2018 </small> </h4>
               <p>
@@ -85,7 +85,7 @@
               Tool stack: <span>&#8226;</span> time and motion study, shopfloor management <span>&#8226;</span> Design Software: Solidworks 3D, NX5 <span>&#8226;</span> Everyday work software: MS office suite
               </P>
           
-          <h3>Education</h3>
+          <h3>B. Education</h3>
             <h4>Master of Science in Industrial Engineering <small> - University of Illinois at Chicago, Aug 2016 - Dec 2017 </small> </h4>
               <p>
               GPA: 3.89/4.00 
@@ -127,11 +127,11 @@
                 </ul>
               </P>
           
-          <h3>Major achivements</h3>
+          <h3>C. Major achivements</h3>
             <h4>Founder and Captain <small> -  Team Pravega, Formula SAE collegiate chapter, May 2012 - Aug 2014 </small> </h4>
               <p>
-                <span>&#8226;</span> [Official team report](https://drive.google.com/viewerng/viewer?url=http%3A//www.jsae.or.jp/formula/jp/12th/pdf/no_70.pdf&embedded=true)
-                <span>&#8226;</span> [Official team movie](https://www.youtube.com/watch?v=BjfrJWS7JkQ&feature=youtu.be)
+                <span>&#8226;</span> ![Official team report](https://drive.google.com/viewerng/viewer?url=http%3A//www.jsae.or.jp/formula/jp/12th/pdf/no_70.pdf&embedded=true)
+                <span>&#8226;</span> ![Official team movie](https://www.youtube.com/watch?v=BjfrJWS7JkQ&feature=youtu.be)
               </p>
 
               <p>
@@ -184,9 +184,9 @@
             <br />
             <p>
               <ul>
-                <li> BAJA - 2011: Fabrication team. </li>
-                <li> BAJA - 2012: Lead - Powertrain Design & Implementation of CVT and customized transmission. </li>
-                <li> BAJA - 2013: Lead - Suspension Design & Power train. </li>
+                <li> BAJA - 2012: Fabrication team. </li>
+                <li> BAJA - 2013: Lead - Powertrain Design & Implementation of CVT and customized transmission. </li>
+                <li> BAJA - 2014: Lead - Suspension Design & Power train. </li>
               </ul>
             </p>
             <p>
@@ -194,10 +194,65 @@
             time-management and fabrication skills.
             </p>
           
-          <h3>Personality assessment<h3>
-            <h5> MBTI Profile - type - INFJ </h5>
-            <h5> DISC Profile - type - C </h5>
+          <h3>D. Personality assessment<h3>
+            <h4> MBTI Profile - type - INFJ </h4>
+            <h4> DISC Profile - type - C </h4>
           
+          <h3>E. Skills<h3>
+            <span>&#8226;</span> Finite Elemental Analysis <span>&#8226;</span> Time and motion study <span>&#8226;</span> Operations research
+            <span>&#8226;</span> Machine Learning <span>&#8226;</span> Data Science <span>&#8226;</span> DevOps 
+            <span>&#8226;</span> Cyber physical manufacturing systems <span>&#8226;</span> Inventory control 
+            <span>&#8226;</span> Supply chain management <span>&#8226;</span> Time series analysis <span>&#8226;</span> Time series clustering
+            <span>&#8226;</span> Long short term memory network <span>&#8226;</span> Testing Strategy <span>&#8226;</span> Computer aided design
+            <span>&#8226;</span> Onboard diagnostics systems <span>&#8226;</span> Agile culture
+            
+          <h3>F. Projects <small> - ![slideshare profile](https://www.slideshare.net/8082298612/presentations) </small> <h3>
+            
+            <h4> Facility Layout and operations efficiency optimization at Mr. transmission facility, Indiana. Apr 2017 </h4> 
+              <p>
+                <span>&#8226;</span> ![Link to presentation](https://www.slideshare.net/8082298612/facility-layout-and-operations-efficiency-optimization)
+                <span>&#8226;</span> ![Link to proposed facility restructuring](https://www.youtube.com/watch?v=2JjVQpg-lWc)
+              </p>
+              <p>
+                Outcomes:
+              <ui>
+                  <li>1. A standardized process for initiating a customer request, assigning the jobs and maintaining the track of proceedings. </li>
+                  <li>2. A detailed flow map and space allocation for vehicles depending on their work in progress status. </li>
+                  <li>3. 5S (Sort, set in order, standardize, shine, sustain) implementation for housekeeping and storage. </li>
+                  <li>4. Ergonomically efficient lighting arrangement. </li>
+                  <li>5. Standardized process for quality inspection for repair works. </li>
+                  <li>6. Standardized process for gathering and maintaining customer review and feedbacks. </li>
+                  <li>7. A market analysis for future growth and capacity management. </li>
+              </ui>
+              </p>
+             
+             <h4> Study of end to end memory network and facebook BABI project. Feb 2017 </h4> 
+              <p>
+              ![Link to presentation](https://www.slideshare.net/8082298612/study-of-end-to-end-memory-networks)
+                <ui>
+                  <li>Soft attention version of MemN2N. </li>
+                  <li>Flexible read-only memory. </li>
+                  <li>Multiple memory lookups (hops). </li>
+                  <li>Can consider multiple memory before deciding output. </li>
+                  <li>More reasoning power. </li>
+                  <li>End-to-end training. </li>
+                  <li>Only needs final output for training. </li>
+                  <li>Simple back-propagation. </li>
+                </ui>
+              </p>
+                 
+          <h3>G. Resume</h3>
+            ![link to pdf format](https://drive.google.com/file/d/0B6w2QVe-_1FfUlVIeDZwNDgxM00/view?usp=sharing)
+            
+          <h3>H. Meetups I usually attend</h3>
+            <ui>
+              <li> ![IndyPy](https://www.meetup.com/indypy/) </li>
+              <li> ![Data Science Indy](https://www.meetup.com/dsindy/) </li>
+              <li> ![Indy DevOps](https://www.meetup.com/IndyDevOps/) </li>
+              <li> ![Indy Use"R" group](https://www.meetup.com/Indy-useR-Group/) </li>
+              <li> ![Indy Azure user group](https://www.meetup.com/Indy-Azure-User-Group/) </li>
+              <li> ![Indy IoT meetup](https://www.meetup.com/Indy-IoT-Meetup/) </li> 
+            </ui>
           
           <quote-card />
           
