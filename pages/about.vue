@@ -86,7 +86,75 @@
               </P>
           
           <h3>Education</h3>
+            <h4>Master of Science in Industrial Engineering <small> - University of Illinois at Chicago, Dec 2017 </small> </h4>
+              <p>
+              GPA: 3.89/4.00 
+              </P>
+
+              <p>
+              Coursework: 
+                <ul>
+                  <li> Statistical Models and Methods for Business Analytics </li>
+                  <li> Big Data Analysis for Cyber Physical Manufacturing System </li>
+                  <li> Data Science 1 - Supervised learning </li>
+                  <li> Data Science 2 - Unsupervised learning </li>
+                  <li> Design analysis of experiments Engineering </li>
+                  <li> Operation research 2 </li>
+                  <li> Plant layout and materials handling </li>
+                  <li> Production planning and inventory control </li>
+                  <li> Supply chain management </li>
+                </ul>
+              </P>
+            
+            <h4>Bachelor of Engineering in Production Engineering <small> -  Mumbai University, Fr. Conceicao Rodrigues college of Engineering, May 2014 </small> </h4>
+              <p>
+              Results: First class with Distinction (7th rank overall) 
+              </P>
+
+              <p>
+              Coursework: 
+                <ul>
+                  <li> Economics, finance, accounting & costing </li>
+                  <li> Industrial relations & human resource management </li>
+                  <li> Logistics and Supply chain management </li>
+                  <li> Manufacturing Engineering </li>
+                  <li> Computer aided manufacturing </li>
+                  <li> Automation and control engineering </li>
+                  <li> Operations Research </li>
+                  <li> Production operations management </li>
+                  <li> Theory of machines </li>
+                  <li> Total quality strategy </li>
+                </ul>
+              </P>
           
+          <h3>Major achivements</h3>
+            <h4>Founder and Captain <small> -  Team Pravega, FSAE collegiate chapter </small> </h4>
+            <p>
+              <span>&#8226;</span> [Official team report](https://drive.google.com/viewerng/viewer?url=http%3A//www.jsae.or.jp/formula/jp/12th/pdf/no_70.pdf&embedded=true)
+              <span>&#8226;</span> [Official team movie](https://www.youtube.com/watch?v=BjfrJWS7JkQ&feature=youtu.be)
+            </p>
+            
+            <p>
+            I started the initiative named 'Team Pravega' during the second year of my undergraduation. 
+            I led the team of 25 members which designed, fabricated and assembled a student prototype of formula one car.
+            </p>
+            <p>
+            The objective was to utilize the engineering practices which were taught during engineering curriculum and apply 
+            those to build a prototype of a formula one car which would compete in an endurance race organized for engineering 
+            students at international level.
+            </p>
+            <p>
+            I managed to lead the team successfully to compete in Japan FSAE competition in September 2014.
+            </p>
+            <p>
+             Being the initiator, it was a great deal of comprehensive experience to manage the design team, 
+             marketing and sponsorship team, fabrication schedule and finance team. 
+            </p>
+            <p>
+            During the process, I worked on design software (Solidworks 3D), analysis software (Solidworks, Ansys), 
+            presentation and report making software (MS office suit) and various fabrication tools with hands-on experience.
+            </p>
+            
           <quote-card />
           
           <h3>Resume</h3>
