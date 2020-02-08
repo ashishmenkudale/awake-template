@@ -215,7 +215,7 @@
               </p>
               <p>
                 Outcomes:
-              <ui>
+              <ul>
                   <li>1. A standardized process for initiating a customer request, assigning the jobs and maintaining the track of proceedings. </li>
                   <li>2. A detailed flow map and space allocation for vehicles depending on their work in progress status. </li>
                   <li>3. 5S (Sort, set in order, standardize, shine, sustain) implementation for housekeeping and storage. </li>
@@ -223,13 +223,13 @@
                   <li>5. Standardized process for quality inspection for repair works. </li>
                   <li>6. Standardized process for gathering and maintaining customer review and feedbacks. </li>
                   <li>7. A market analysis for future growth and capacity management. </li>
-              </ui>
+              </ul>
               </p>
              
              <h4> Study of end to end memory network and facebook BABI project. Feb 2017 </h4> 
               <p>
               ![Link to presentation](https://www.slideshare.net/8082298612/study-of-end-to-end-memory-networks)
-                <ui>
+                <ul>
                   <li>Soft attention version of MemN2N. </li>
                   <li>Flexible read-only memory. </li>
                   <li>Multiple memory lookups (hops). </li>
@@ -238,21 +238,21 @@
                   <li>End-to-end training. </li>
                   <li>Only needs final output for training. </li>
                   <li>Simple back-propagation. </li>
-                </ui>
+                </ul>
               </p>
                  
           <h3>G. Resume</h3>
             ![link to pdf format](https://drive.google.com/file/d/0B6w2QVe-_1FfUlVIeDZwNDgxM00/view?usp=sharing)
             
           <h3>H. Meetups I usually attend</h3>
-            <ui>
+            <ul>
               <li> ![IndyPy](https://www.meetup.com/indypy/) </li>
               <li> ![Data Science Indy](https://www.meetup.com/dsindy/) </li>
               <li> ![Indy DevOps](https://www.meetup.com/IndyDevOps/) </li>
               <li> ![Indy Use"R" group](https://www.meetup.com/Indy-useR-Group/) </li>
               <li> ![Indy Azure user group](https://www.meetup.com/Indy-Azure-User-Group/) </li>
               <li> ![Indy IoT meetup](https://www.meetup.com/Indy-IoT-Meetup/) </li> 
-            </ui>
+            </ul>
           
           <quote-card />
           
