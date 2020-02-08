@@ -86,7 +86,7 @@
               </P>
           
           <h3>Education</h3>
-            <h4>Master of Science in Industrial Engineering <small> - University of Illinois at Chicago, Dec 2017 </small> </h4>
+            <h4>Master of Science in Industrial Engineering <small> - University of Illinois at Chicago, Aug 2016 - Dec 2017 </small> </h4>
               <p>
               GPA: 3.89/4.00 
               </P>
@@ -106,7 +106,7 @@
                 </ul>
               </P>
             
-            <h4>Bachelor of Engineering in Production Engineering <small> -  Mumbai University, Fr. Conceicao Rodrigues college of Engineering, May 2014 </small> </h4>
+            <h4>Bachelor of Engineering in Production Engineering <small> -  Mumbai University, Fr. Conceicao Rodrigues college of Engineering, June 2014 </small> </h4>
               <p>
               Results: First class with Distinction (7th rank overall) 
               </P>
@@ -128,33 +128,78 @@
               </P>
           
           <h3>Major achivements</h3>
-            <h4>Founder and Captain <small> -  Team Pravega, FSAE collegiate chapter </small> </h4>
-            <p>
-              <span>&#8226;</span> [Official team report](https://drive.google.com/viewerng/viewer?url=http%3A//www.jsae.or.jp/formula/jp/12th/pdf/no_70.pdf&embedded=true)
-              <span>&#8226;</span> [Official team movie](https://www.youtube.com/watch?v=BjfrJWS7JkQ&feature=youtu.be)
-            </p>
+            <h4>Founder and Captain <small> -  Team Pravega, Formula SAE collegiate chapter, May 2012 - Aug 2014 </small> </h4>
+              <p>
+                <span>&#8226;</span> [Official team report](https://drive.google.com/viewerng/viewer?url=http%3A//www.jsae.or.jp/formula/jp/12th/pdf/no_70.pdf&embedded=true)
+                <span>&#8226;</span> [Official team movie](https://www.youtube.com/watch?v=BjfrJWS7JkQ&feature=youtu.be)
+              </p>
+
+              <p>
+              I started the initiative named 'Team Pravega' during the second year of my undergraduation. 
+              I led the team of 25 members which designed, fabricated and assembled a student prototype of formula one car.
+              </p>
+              <p>
+              The objective was to utilize the engineering practices which were taught during engineering curriculum and apply 
+              those to build a prototype of a formula one car which would compete in an endurance race organized for engineering 
+              students at international level.
+              </p>
+              <p>
+              I managed to lead the team successfully to compete in Japan FSAE competition in September 2014.
+              </p>
+
+              <figure>
+                  <opti-image
+                    :src="require('~/assets/uploads/pravega.jpg').src"
+                    :srcset="require('~/assets/uploads/pravega.jpg').srcSet"/>
+              </figure>
+              <br />
+
+              <p>
+               Being the initiator, it was a great deal of comprehensive experience to manage the design team, 
+               marketing and sponsorship team, fabrication schedule and finance team. 
+              </p>
+              <p>
+              During the process, I worked on design software (Solidworks 3D), analysis software (Solidworks, Ansys), 
+              presentation and report making software (MS office suit) and various fabrication tools with hands-on experience.
+              </p>
             
+          <h4>Core team member <small> -  Team Abadha, SAE India collegiate chapter, Feb 2011 - May 2014 </small> </h4> 
             <p>
-            I started the initiative named 'Team Pravega' during the second year of my undergraduation. 
-            I led the team of 25 members which designed, fabricated and assembled a student prototype of formula one car.
+            Team Abadha CRCE is a competitor in SAE BAJA competition in India. The competition involves designing, 
+            fabricating and assembling an all-terrain vehicle and participating in an endurance race at Natrip Track, Indore, India.
+            Since the first year of my undergraduation course, I got associated with SAE collegiate club which was 
+            then newly established in the college.
             </p>
             <p>
-            The objective was to utilize the engineering practices which were taught during engineering curriculum and apply 
-            those to build a prototype of a formula one car which would compete in an endurance race organized for engineering 
-            students at international level.
+            I learned vehicle dynamics and extensively studied related literature. I worked on the chassis design, 
+            suspension and steering design and powertrain analysis over the duration of three years. I represented my college 
+            at the national level, virtual screening rounds (Technical design presentation round) for two times consecutively 
+            and got selected for BAJA main event.
+            </p>
+            <figure>
+                  <opti-image
+                    :src="require('~/assets/uploads/abadha.jpg').src"
+                    :srcset="require('~/assets/uploads/abadha.jpg').srcSet"/>
+              </figure>
+            <br />
+            <p>
+              <ul>
+                <li> BAJA - 2011: Fabrication team. </li>
+                <li> BAJA - 2012: Lead - Powertrain Design & Implementation of CVT and customized transmission. </li>
+                <li> BAJA - 2013: Lead - Suspension Design & Power train. </li>
+              </ul>
             </p>
             <p>
-            I managed to lead the team successfully to compete in Japan FSAE competition in September 2014.
+            I utilized this opportunity to demonstrate my teamwork skills, leadership quality, technical presentations skills, 
+            time-management and fabrication skills.
             </p>
-            <p>
-             Being the initiator, it was a great deal of comprehensive experience to manage the design team, 
-             marketing and sponsorship team, fabrication schedule and finance team. 
-            </p>
-            <p>
-            During the process, I worked on design software (Solidworks 3D), analysis software (Solidworks, Ansys), 
-            presentation and report making software (MS office suit) and various fabrication tools with hands-on experience.
-            </p>
-            
+          
+          <h3>Personality assessment<h3>
+            <h5> MBTI Profile - type - INFJ </h5>
+            <h5> DISC Profile - type - C </h5>
+          
+          <ke
+          
           <quote-card />
           
           <h3>Resume</h3>
