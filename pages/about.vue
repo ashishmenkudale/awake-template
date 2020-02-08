@@ -16,13 +16,7 @@
           <quote-card />
           
           <h3>Resume</h3>
-          <figure>
-                <opti-image
-                  :src="require('~/assets/uploads/Resume_Ashish_2020-1.jpg').src"
-                  :srcset="require('~/assets/uploads/Resume_Ashish_2020-1.jpg').srcSet"
-                />
-              </figure>
-              <br />
+
         </div>
 
         <div class="tile is-ancestor">
