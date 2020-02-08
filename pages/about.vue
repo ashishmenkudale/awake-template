@@ -198,7 +198,6 @@
             <h5> MBTI Profile - type - INFJ </h5>
             <h5> DISC Profile - type - C </h5>
           
-          <ke
           
           <quote-card />
           
