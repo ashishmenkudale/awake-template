@@ -4,7 +4,7 @@ subtitle: suitable for CI/CD workflows generating Junit xmls, coverage reports â
 category:
   - DevOps
 author: Ashish Menkudale
-date: 2020-January-25
+date: 2020-03-01T19:59:59.000Z
 featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
