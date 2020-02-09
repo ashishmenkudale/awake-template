@@ -195,8 +195,8 @@
             </p>
           
           <h3>D. Personality assessment</h3>
-            <h4> MBTI Profile - type - INFJ </h4>
-            <h4> DISC Profile - type - C </h4>
+            <h5> MBTI Profile - type - INFJ </h5>
+            <h5> DISC Profile - type - C </h5>
           
           <h3>E. Skills </h3>
            <p>
@@ -245,7 +245,7 @@
                  
           <h3>G. Resume</h3>
             <p>
-              <a href="https://drive.google.com/file/d/0B6w2QVe-_1FfUlVIeDZwNDgxM00/view?usp=sharing"> link to pdf format </a>
+              <a href="https://drive.google.com/file/d/1TsG40l9pgqF6yAHa7HX1FlXkQtdCmPBg/view?usp=sharing"> link to pdf format </a>
             </p>
             
           <h3>H. Meetups I usually attend</h3>
